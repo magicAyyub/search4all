@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+     text-decoration: none;
+    list-style: none;
+    outline: none; 
+}
+
+:root {
+    --primary: #d23537;
+    --white: #fff;
+    --black: #000;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container .left{
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.container .left .text{
+    width: 100%;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    position: relative;
+}
+
+.container .left .text h1{
+    font-size: 3rem;
+}
+.container .right{
+    position: relative;
+    flex-basis: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.container .right img{
+    width: 80%;
+}
+
+.container .left{
+    position: relative;
+}
+.container .left .box{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+.container .left form .input-box{
+    position: relative;
+    width: 100%;
+}
+.container .left form .input-box input{
+    width:100%;
+    padding: 1.6rem;
+    border-radius: 1.4rem;
+    font-size: 1rem;
+}
+.container .left form .input-box #search::-webkit-search-cancel-button{
+    display: none;
+}
+
+.container .left form .input-box button{
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-20px);
+    cursor: pointer;
+    
+}
+
+.container .left form .input-box button ion-icon{
+    font-size: 2rem;
+}
+
+
+/* search custom */
+#results-container{
+    position: absolute;
+    z-index: 1000;
+    top: 105%;
+    right: -30%;
+    width: 30rem;
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: none;
+}
+#results-container.show{
+    display: block;
+    animation: fadeInFromBottom 1s ease-out;
+}
+@keyframes fadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+
+  @keyframes fadeOutToTop {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+  
+#results-container h3{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+#results-container .files .doc_container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--black);
+    opacity: .7;
+}
+#results-container .files > .doc_container:not(:last-child) {
+    border-bottom: 2px solid #eee;
+}
+
+#results-container .files .doc_container button{
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+#results-container .files .doc_container ion-icon{
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .5rem;
+    border-radius: 6px;
+}
+#results-container .files .doc_container .file_name{
+    width: 100%;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    position: relative;
+}
+
+
+/* Setup style */
+.container.set{
+    justify-content: center;
+}
+.setup{
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width:40rem;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    position: relative;
+}
+
+.setup form .group{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.setup form .group label{
+    opacity: .8;
+}
+.setup form .group input{
+    padding: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid var(--black);
+}
+.setup form button{
+    margin-top: .6rem;
+    padding:.8rem 1.2rem;
+    background-color: var(--primary);
+    outline: none;
+    border: 1px solid #eee;
+    color: var(--white);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.setup form button:hover{
+    opacity: .8;
+}
+
+.message-box{
+    position: absolute;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    animation: fadeInFromBottom 1s ease-out;
+}
+.message-box.success{
+    background-color: rgb(243 250 247/1);
+    color: rgb(3 84 63/1);
+    border: 1px solid rgb(132 225 188/1);
+}
+
+.message-box.error{
+    color: rgb(155 28 28/1);
+    background-color: rgb(253 242 242/1);
+    border-color: rgb(248 180 180/1);
+}
