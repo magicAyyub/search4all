@@ -1,12 +1,6 @@
 <?php 
-    session_start();
-    if(!isset($_SESSION["is_setup"])){
-        header("location: ./setup.php");
-    }
-
-    # decomment for reset session 
-    // unset($_SESSION["is_setup"]);
-    // session_destroy();
+    if (!file_exists("./config/run.bat"))
+        header("location: ./config/setup.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">

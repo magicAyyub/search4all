@@ -108,8 +108,8 @@ body {
 #results-container{
     position: absolute;
     z-index: 1000;
-    top: 105%;
-    right: -30%;
+    top: 108%;
+    left: 0;
     width: 30rem;
     background-color: var(--white);
     border-radius: 6px;
@@ -235,6 +235,12 @@ body {
     border-radius: 1rem;
     animation: fadeInFromBottom 1s ease-out;
 }
+
+.message-box.success a{
+    color: rgb(3 84 63/1);
+    text-decoration: underline;
+}
+
 .message-box.success{
     background-color: rgb(243 250 247/1);
     color: rgb(3 84 63/1);

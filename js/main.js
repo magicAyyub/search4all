@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             allowOutsideClick: false,
         });
 
-        fetch('search.php?q=' + encodeURIComponent(query))
+        fetch('./config/search.php?q=' + encodeURIComponent(query))
             .then(response => response.json())
             .then(data => {
                 console.log(data);

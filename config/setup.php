@@ -4,21 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setup</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="container set">
         <div class="setup">
-            <?php if (isset($_SESSION["error"])) : ?>
-                <div class="message-box error">
-                    <?= $_SESSION["error"]; unset($_SESSION["error"])?>
-                </div>
-            <?php elseif(isset($_SESSION["success"])) :?>
-                <div class="message-box success">
-                    <?= $_SESSION["success"]; unset($_SESSION["success"])?>
-                </div>
-            <?php endif;?>
             <h1>Premiers pas</h1>
             <p>Avant de procéder à la recherche, Rendez-vous dans votre explorateur de fichier, choisissez le dossier principale de recherche puis copiez le chemin d'accès.</p>
             <form action="save_config.php" method="post">
