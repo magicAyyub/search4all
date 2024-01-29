@@ -15,28 +15,12 @@ Suivez ces étapes pour configurer et exécuter le projet.
 
 ### 2. Configuration
 
-1. Clonez ce dépôt sur votre machine locale.
+1. Téléchargez le zip ou clonez ce dépôt sur votre machine locale:
    ```bash
    git clone https://github.com/votre-nom/search4all.git
-2. Accédez au dossier du projet
-   ```bash
-   cd search4all
-3. Lancez la page de configuration pour configurer votre projet.
-   ```bash
-   php -S localhost:8000
-4. Ouvrez votre navigateur web et collez `localhost:8000`
-5. Suivez les instructions.
-   
-### 3. Lancer le Serveur
 
-Choisissez le fichier de script approprié en fonction de votre système d'exploitation :
+2. Double cliquez sur start_windows sinon lancez start.sh dans votre terminal si vous êtes sur linux ou mac
 
-- Pour Windows : Double-cliquez sur `run.bat`.
-- Pour les systèmes de type Unix : Exécutez ./run.sh dans le terminal.
-
-### 4. Accéder au Projet
-
-- Ouvrez votre navigateur web et collez `localhost:8000` pour accéder à votre projet PHP.
 
 ### 5. Fonctionnalités
 
