@@ -61,3 +61,4 @@ if (file_exists($configFile)) {
 echo searchFiles($rootFolder, $query);
 
 
+
