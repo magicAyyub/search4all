@@ -1,32 +1,32 @@
 # search4all
 
-## Aperçu
+## Overview
 
-Le projet "search4all" est une application PHP permettant de rechercher et d'explorer des documents au sein d'une structure hiérarchique de dossiers. L'application offre une interface conviviale pour la configuration initiale, une recherche asynchrone et l'affichage des résultats dans une popup.
+The "search4all" project is a PHP application for searching and exploring documents within a hierarchical folder structure. The application offers a user-friendly interface for initial configuration, asynchronous search and popup display of results.
 
 ## Mise en route
 
-Suivez ces étapes pour configurer et exécuter le projet.
+Follow these steps to set up and run your project.
 
-### 1. Prérequis
+### 1. Prerequisites
 
-- PHP installé sur votre machine
-- Un navigateur web
+- PHP installed on your machine
+- A web browser
 
 ### 2. Configuration
 
-1. Téléchargez le zip ou clonez ce dépôt sur votre machine locale:
-   ```bash
+1. Download the zip or clone this repository on your local machine:
+   ``bash
    git clone https://github.com/votre-nom/search4all.git
 
-2. Double cliquez sur start_windows sinon lancez start.sh dans votre terminal si vous êtes sur linux ou mac
+2. Double-click on start_windows or run start.sh in your terminal if you're on linux or mac.
 
 
-### 5. Fonctionnalités
+### 5. Features
 
-- Recherche asynchrone dans une structure hiérarchique de dossiers.
-- Affichage des résultats dans une popup pour une meilleure expérience utilisateur.
+- Asynchronous search in a hierarchical folder structure.
+- Popup display of results for improved user experience.
 
 ### Notes
-- Assurez-vous de conserver le fichier config.json dans le répertoire racine du projet.
-- N'éditez pas manuellement les fichiers de script générés (run.bat et run.sh).
+- Be sure to keep the config.json file in the project root directory.
+- Do not manually edit the generated script files (run.bat and run.sh).
